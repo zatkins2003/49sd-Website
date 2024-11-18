@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>49th Security Division</title>
+        <meta name="author" content="Zachary Atkins">
+        <link rel="icon" type="image/x-icon" href="49sd_ICON.ico">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <img id="home-icon" class = "logo" src="49sd_ICON.png" alt="Logo" >
+            <h1 id="title" class = "title">49<sup>th</sup> Security Division - Join</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="contacts.html">Contacts</a>
+                <a href="about.html">About</a>
+                <a href="join.html">Join</a>
+                
+            </nav>
+        </header>
+        <main>
+            <article class="content-join">
+                <h1>Join Us!</h1>
+                <p>Join the 49SD Discord! We have a verification process in place to allow only UNC Charlotte students on the server. 
+                    If you are not a UNC Charlotte student but are still interested in joining the 49th Security Division, then please 
+                    send us an email. <br><br> Doing so will allow you to:</p>
+                <ul>
+                    <li>Participate in Meetings</li>
+                    <li>Practice for competitions</li>
+                    <li>Attend competition practices (For competitions that do not require membership)</li>
+                    <li>View membership requirements in the Discord server.</li>
+                    <li>Attend lab sessions</li>
+                </ul>
+            </article>
+            <article class="content-join-CTF">
+                
+                <h2>Mini Challenges</h2>
+                <p>To have a better grasp of the kind of challenges you could face in a capture the flag 
+                    (CTF).A Capture the Flag (CTF) competition is a type of computer security competition 
+                    in which a person or team is given a variety of problems to complete. To receive points, 
+                    the person or team must submit the proper flag or solution, which is discovered through 
+                    completing the tasks. We've put up a little CTF for you to try out. If you're having trouble 
+                    finding the flag, click the hint button to assist you.</p>
+            
+            <div id="accordion-container">
+                <ul class="accordion-list">
+                    <li class="accordion-list-element">
+                        <p>Challenge 1: HTML    <span class="arrow-icon">►</span></p>
+                        
+                        <div class="content">
+                            <p>Can you find the hidden flag on this webpage? <br> Enter Flag Here: </p>
+                            <form>
+                                <input type="text" id="q1ans" name="q1ans">
+                                <button class="button2" type="button" id="submitButton1">Submit</button>
+                                <span id="message1"></span>
+                            </form>
+                            <button class="button2" id="hintButton1">Hint:</button>
+                            <p id="hint1" class="hidden">hit f12</p>
+                            <!-- flag{sUmBit_tHIs} -->
+                        </div>
+                    </li>
+                    <li class="accordion-list-element">
+                        <p>Challenge 2: Decode  <span class="arrow-icon">►</span></p>
+                        
+                        <div class="content">
+                            <p>Message: 01110101 01011111 01010010 01011111 01001000 01000000 01100011 01101011 00110011 01110010 <br> Enter Message Here: </p>
+                            <form>
+                                <input type="text" id="q2ans" name="q2ans">
+                                <button class="button2" type="button" id="submitButton2">Submit</button>
+                                <span id="message2"></span>
+                            </form>
+                            <button class="button2" id="hintButton2">Hint:</button>
+                            <p id="hint2" class="hidden">binary</p>
+                        </div>
+                    </li>
+                    <li class="accordion-list-element c3">
+                        <p>Challenge 3: Log Analysis    <span class="arrow-icon">►</span></p>
+                        
+                        <div class="content">
+                            <p>For this challenge you will need this <a href="apache_logs" target="_blank">log file</a></p>
+
+                            <div id="c3content">
+                                <ul class="accordion-list">
+                                    <li class="accordion-list-element q3">
+                                        <p>Question 1   <span class="arrow-icon">►</span></p>
+                                        
+                                        <div class="content">
+                                            <p>How many lines are there in the log file? <br> Enter Answer Here: </p>
+                                            <form>
+                                                <input type="text" id="q3.1ans" name="q3.1ans">
+                                                <button class="button2" type="button" id="submitButton3.1">Submit</button>
+                                                <span id="message3.1"></span>
+                                            </form>
+                                            <button class="button2" id="hintButton3.1">Hint:</button>
+                                            <p id="hint3.1" class="hidden">Command Line Tool wc</p>
+                                            
+                                        </div>
+                                    </li>
+                                    <li class="accordion-list-element q3">
+                                        <p>Question 2   <span class="arrow-icon">►</span></p>
+                                        
+                                        <div class="content">
+                                            <p>How many Unique IP's are there in the log file? <br> Enter Answer Here: </p>
+                                            <form>
+                                                <input type="text" id="q3.2ans" name="q3.2ans">
+                                                <button class="button2" type="button" id="submitButton3.2">Submit</button>
+                                                <span id="message3.2"></span>
+                                            </form>
+                                            <button class="button2" id="hintButton3.2">Hint:</button>
+                                            <p id="hint3.2" class="hidden">Command Line Tool cat, cut uniq</p>
+                                            
+                                        </div>                                    
+                                    </li>
+                                    <li class="accordion-list-element q3">
+                                        <p>Question 3   <span class="arrow-icon">►</span></p>
+                                        
+                                        <div class="content">
+                                            <p>What is the IP address from which the server got more traffic from? <br> Enter Answer Here: </p>
+                                            <form>
+                                                <input type="text" id="q3.3ans" name="q3.3ans">
+                                                <button class="button2" type="button" id="submitButton3.3">Submit</button>
+                                                <span id="message3.3"></span>
+                                            </form>
+                                            <button class="button2" id="hintButton3.3">Hint:</button>
+                                            <p id="hint3.3" class="hidden">Command Line Tool cat, cut, sort, uniq</p>
+                                            
+                                        </div>                                    
+                                    </li>
+                                    <li class="accordion-list-element q3">
+                                        <p>Question 4   <span class="arrow-icon">►</span></p>
+                                        
+                                        <div class="content">
+                                            <p>What is the URL which was most visited? <br> Enter Answer Here: </p>
+                                            <form>
+                                                <input type="text" id="q3.4ans" name="q3.4ans">
+                                                <button class="button2" type="button" id="submitButton3.4">Submit</button>
+                                                <span id="message3.4"></span>
+                                            </form>
+                                            <button class="button2" id="hintButton3.4">Hint:</button>
+                                            <p id="hint3.4" class="hidden">Command Line Tool cat, cut, sort, uniq</p>
+                                            
+                                        </div>                                    
+                                    </li>
+                                    <li class="accordion-list-element q3">
+                                        <p>Question 5   <span class="arrow-icon">►</span></p>
+                                        
+                                        <div class="content">
+                                            <p>What is the total count of requests which got a 200 response? <br> Enter Answer Here: </p>
+                                            <form>
+                                                <input type="text" id="q3.5ans" name="q3.5ans">
+                                                <button class="button2" type="button" id="submitButton3.5">Submit</button>
+                                                <span id="message3.5"></span>
+                                            </form>
+                                            <button class="button2" id="hintButton3.5">Hint:</button>
+                                            <p id="hint3.5" class="hidden">Command Line Tool cat, cut, sort, uniq</p>
+                                            
+                                        </div>                                    
+                                    </li>
+                                </ul>
+                            </div>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+
+                        </div>
+                    </li>
+                    <li class="accordion-list-element">
+                        <p>Challenge 4: Cryptography    <span class="arrow-icon">►</span></p>
+                        
+                        <div class="content">
+                            <p>Alice just sent a secret message to Bob, can you find out what they were trying to communicate? <br> Encrypted Message: o3Ss0_i0I</p>
+                            <form>
+                                <input type="text" id="q4ans" name="q4ans">
+                                <button class="button2" type="button" id="submitButton4">Submit</button>
+                                <span id="message4"></span>
+                            </form>
+                            <button class="button2" id="hintButton4">Hint:</button>
+                            <p id="hint4" class="hidden">This is encoded using a popular Encryption techique</p>
+                        </div>
+                    </li>
+                </ul>
+            </div> 
+            <script src="CTF.js"></script>
+            </article>
+            <article class="triv-container">
+                <h2>Computer Science Trivia</h2>
+                <div class="start-card">
+                    <button class="startBTN">Start!</button>
+                </div>
+                <div class="question-card">
+                    <h2 class="question-title">Question: 1</h2>
+                    <p class="question">question</p>
+                    <div class="answer-container">
+                        <button class="answer one" onclick="checkAns(0)">answer1</button>
+                        <button class="answer two" onclick="checkAns(1)">answer1</button>
+                        <button class="answer three" onclick="checkAns(2)">answer1</button>
+                        <button class="answer four" onclick="checkAns(3)">answer1</button>
+                    </div>
+                </div>
+                <div class="score-card">
+                    <h2 class="score"></h2>
+                    <button class="play-againBTN">Play again!</button>
+                </div>
+                <script src="triv.js"></script>
+            </article>
+        </main>
+        <footer>
+            <img id="uncc-logo" class="footer-logo" src="charlotte.png" alt="UNCC Logo">
+            <p class="copyright">© 2024 49th Security Division.</p>
+            <p class="email">contact us: 49thSecurityDivision@uncc.edu</p>
+            
+        </footer>
+        <script src="Icons.js"></script>
+    </body>
+</html>

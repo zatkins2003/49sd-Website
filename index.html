@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>49th Security Division</title>
+    <meta name="author" content="Zachary Atkins">
+    <link rel="icon" type="image/x-icon" href="49sd_ICON.ico">
+    <meta charset="UTF-8">
+</head>
+<body>
+    <header>
+        <img id="home-icon" class = "logo" src="49sd_ICON.png" alt="Logo" >
+        
+            <h1 id="title" class = "title">49<sup>th</sup> Security Division - Home</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="contacts.html">Contacts</a>
+                <a href="about.html">About</a>
+                <a href="join.html">Join</a>
+                
+            </nav>
+    </header>
+    <main>
+        <!--PLACEHOLDER FOR JS CAROUSEL-->
+        <div class="carousel-container">
+            <button class="carousel-btn left"><i class="fa-solid fa-chevron-left"></i></button>
+            <ul class="carousel">
+                <li class = "carousel-item active"><img src="carousel1.png" alt="caouselimage"></li>
+                <li class = "carousel-item"><img src="carousel2.png" alt="caouselimage"></li>
+                <li class = "carousel-item"><img src="carousel3.png" alt="caouselimage"></li>
+            </ul>
+            <button class="carousel-btn right"><i class="fa-solid fa-chevron-right"></i></button>
+            <div class="carousel-nav">
+                <div class="nav-item active"></div>
+                <div class="nav-item"></div>
+                <div class="nav-item"></div>
+            </div>
+        </div>
+        <script src="Carousel.js"></script>
+    
+        <!--PLACEHOLDER FOR JS CAROUSEL END-->
+
+        <article class="content-home">
+            <h1>Quick Links</h1>
+            <p>Click here to learn more about the 49th security division</p>
+            <button class="button" onclick="window.location.href='about.html'">About</button>
+            <p>Click here if you are interested in joining</p>
+            <button class="button" onclick="window.location.href='join.html'">Join</button>
+            <p>Click here for contacts</p>
+            <button class="button" onclick="window.location.href='contacts.html'">Contacts</button>
+            <p>Click here to donate</p>
+            <button class ="button" onclick="window.open('https://hcb.hackclub.com/donations/start/49thsecuritydivision', '_blank')">Donate</button>
+        </article>
+
+
+        
+    </main>
+    <footer>
+        <img id="uncc-logo" class="footer-logo" src="charlotte.png" alt="UNCC Logo">
+            <p class="copyright">© 2024 49th Security Division.</p>
+            <p class="email">contact us: 49thSecurityDivision@uncc.edu</p>
+    </footer>
+    <script src="Icons.js"></script>
+</body>
+</html>
